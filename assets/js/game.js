@@ -9,7 +9,7 @@ var enemyHealth = 50;
 var enemyAttacks = 12;
 console.log(enemyName, enemyHealth, enemyAttacks);
 
-var fight = function() {
+    function fight() {
     alert("The fight has begun!");
     //Subtract the value of `playerAttacks` from the value of `enemyHealth` and use that result to update the value in the `enemyHealth` variable
     enemyHealth = enemyHealth - playerAttacks;
