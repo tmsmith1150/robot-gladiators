@@ -5,12 +5,18 @@ var playerAttack = 10;
 var playerMoney = 10;
 console.log(playerName, playerHealth, playerAttack, playerMoney);
 
-var enemyName = "Hotdog";
+var enemyNames = ["Hotdog", "Way Cool Jr", "Ozzy"];
 var enemyHealth = 50;
 var enemyAttack = 10;
-console.log(enemyName, enemyHealth, enemyAttack);
+// console.log(enemyNames.length);
 
-var fight = function() {
+// for (var i = 0; i < enemyNames.length; i++){
+//     console.log(enemyNames[i]);
+// }
+
+
+
+var fight = function(enemyName) {
     // Alert players that they are starting the round
     window.alert("Welcome to Robot Gladiators!");
     var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
@@ -57,5 +63,9 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
   } else {
     window.alert("You need to choose a valid option. Try again!");
   }
+ 
   };
-fight();
+
+  for(var i = 0; i < enemyNames.length; i++) {
+    fight(enemyNames[i]);
+  }
